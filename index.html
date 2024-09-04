@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instgram</title>
+    
+    <!--CSS 스타일 연결-->
+    <link href = "style.css" rel = "stylesheet"> 
 </head>
 <body>
 
 
     <img src = "image\instarlogo.png" width="150px">
     <input value="검색" type = "search">
-    <div id = "profile">
-        <img src = "image\cat.jpg" width="50px">
+    <div id="profile">
+        <div id="profile_pic">
+            <img src = "image\cat.jpg" width="50px" class="circle_pic">
+        </div>
         <div>
             <h2>half_bottle</h2>
            <button>프로필 편집</button>
@@ -36,8 +41,8 @@
     <!--하이라이트-->
     <div>  
         <div class="highlight"> <!--클래스 부여하기-->
-            <div>
-                <img src="image\hl1.jpg" height="35px">
+            <div class="highlight_pic">
+                <img src="image\hl1.jpg" class="circle_pic">
             </div>
 
             <!--window + ;-->
@@ -46,8 +51,8 @@
             </div>
         </div>
         <div class="highlight">
-            <div>
-                <img src = "image\hl2.jpg" height="35px">
+            <div class="highlight_pic">
+                <img src = "image\hl2.jpg" class="circle_pic">
             </div>
             <div>
                 🤣
@@ -56,47 +61,49 @@
     </div>
 
 
-    <div>
-        <p>
-            <div>
-                게시물<br>
-                133
-            </div>
-            <div>
-                팔로워<br> 
-                408
-            </div>
-            <div>
-                팔로우<br> 
-                189
-            </div>       
-        </p>
+    <div class="stat_bar">
+
+        <div class="stat">
+            게시물<br>
+             133
+        </div>
+         <div class="stat">
+            팔로워<br> 
+            408
+        </div>
+         <div class="stat">
+            팔로우<br> 
+             189
+        </div>       
+
     </div>
 
     <div>아이콘이 들어갈 자리</div>
 
     <!--썸네일-->
     <div>
-        <div>
+        <div class="thumbnail_grid">
             <!--퍼센트(%)로 지정된 값은 화면 크기에 따라 이미지의 크기가 바뀐다
             이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진 크기가 바뀌는
             웹페이지를 반응형 웹이라고 한다.
             모든 웹페이지 외주 제작에서 반응형 웹이 가장 비싼 가격으로 거래된다.
             가장 수요많고 난이도가 높기 떄문이다.
             -->
-            <img src = "image\thumnails\1.jpg" width = "32%">
-            <img src = "image\thumnails\2.jpg" width = "32%">
-            <img src = "image\thumnails\3.jpg" width = "32%">
+            <img src = "image\thumnails\1.jpg" class="thumbnail">
+            <img src = "image\thumnails\2.jpg" class="thumbnail">
+            <img src = "image\thumnails\3.jpg" class="thumbnail">
         </div>
 
-        <div>
-            <img src = "image\thumnails\4.jpg" width = "32%">
-            <img src = "image\thumnails\5.jpg" width = "32%">
-            <img src = "image\thumnails\6.jpg" width = "32%">
+        <div class="thumbnail_grid">
+            <img src = "image\thumnails\4.jpg" class="thumbnail">
+            <img src = "image\thumnails\5.jpg" class="thumbnail">
+            <img src = "image\thumnails\6.jpg" class="thumbnail">
         </div>
-        <div><img src = "image\thumnails\7.jpg" width = "32%">
-            <img src = "image\thumnails\8.jpg" width = "32%">
-            <img src = "image\thumnails\9.jpg" width = "32%">
+
+        <div class="thumbnail_grid">
+            <img src = "image\thumnails\7.jpg" class="thumbnail">
+            <img src = "image\thumnails\8.jpg" class="thumbnail">
+            <img src = "image\thumnails\9.jpg" class="thumbnail">
         </div>
         
     </div>

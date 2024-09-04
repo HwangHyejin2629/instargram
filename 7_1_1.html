@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        /* p태그를 먼저 탐색하고 그 하위에 있는 img 태그를 탑색하여 스타일 적용
+        직계적용시 p>img{border:5px solid red;}
+        */
+        p img{border:5px solid red;}   
+    </style>
+    <p>
+        <img src="image\hl1.jpg" width="50px">
+        <div>
+            <img src="image\cat.jpg" width="50px">
+        </div>
+    </p>
+    <img src="image\hl2.jpg" width="50px">
+
+
+    <style>
+        /* 밑 모든 h1적용
+        #header h1{color :red} header */
+        
+        /*header 밑 직계 h1적용*/
+        #header>h1{color:red}
+        #contents h1{coloer : blue}
+    </style>
+    <div id="header">
+        <h1>나는 header의 자식</h1>   <!--직계자식-->     
+        <div id="nav">
+            <h1>navigation</h1>     <!--후손-->    
+        </div>
+
+        <div id="nav2">
+            <h1>navigation</h1>        
+        </div>
+    </div>
+
+
+    <div id="contents">
+        <h1>contents의 자식</h1>        
+    </div>
+</body>
+</html>
